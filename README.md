@@ -1,5 +1,6 @@
 # Cahoon
 A new theme for Jekyll.
+
 ![screenshot](/images/cahoon_resources/mac.png)
 
 ## Overview
@@ -41,7 +42,7 @@ Cahoon's appearance can be easily customized by modifying the `/stylesheets/layo
 * [Fontawesome](http://fontawesome.io)
 
 ###### What's in a name? 
-[*Cahoon* Hallow](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
+[*Cahoon Hallow*](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
 ###### License 
 [MIT](https://github.com/arnp/cahoon/blob/master/LICENSE)
 
