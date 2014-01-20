@@ -41,7 +41,12 @@ Cahoon's appearance can be easily customized by modifying the `/stylesheets/layo
 * [Fontawesome](http://fontawesome.io)
 
 ###### What's in a name? 
-[*Cahoon* Hallow](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
+[*Cahoon Hallow*](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
+
+###### Usage
+I would love to see where Cahoon gets used (or gets turned into). Send me an [email](hi@robinspatel.com),  [tweet](http://twitter.com/ravipatel), or even open an issue here -- anything works! 
+
+
 ###### License 
 [MIT](https://github.com/arnp/cahoon/blob/master/LICENSE)
 
