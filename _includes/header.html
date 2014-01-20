@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{{ site.name }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="/stylesheets/base.css">
+  <link rel="stylesheet" href="/stylesheets/skeleton.css">
+  <link rel="stylesheet" href="/stylesheets/layout.css">
+  <link rel="stylesheet" href="/stylesheets/pager.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="/js/jquery-1.10.2.min.js"></script>
+  <script src="/js/jquery.airport-1.1.source.js"></script>
+  <script src="/js/pager.js"></script>
+
+      <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+  <!-- Primary Page Layout
+  ================================================== -->
+
+  <div id="gallery-background"></div>
+  <div class="container">
+    <div class="sixteen columns" id="top" style="margin-top: 40px;">
+
+    </div>
+  </div>
+  <div class="container">
+
+      <div class="one column offset-by-fifteen go-to-top">
+
+              <a class="scroll" data-easing="easeOutQuad" href="#top"><i class="fa fa-arrow-circle-up fa-2x"></i></a>&nbsp;
+  </div>
+    <div class="two columns sidebar">
+      <nav>
+        <a href="{{ site.url }}"><h1 class="logo">ravi</h1></a>
+        <a href="{{ site.twitter }}" class="social"><i class="fa fa-twitter-square fa-2x"></i>&nbsp;</a>
+        <a href="{{ site.linkedin }}"class="social"><i class="fa fa-linkedin-square fa-2x"></i>&nbsp; </a> 
+        <a href="{{ site.facebook }}"class="social"><i class="fa fa-facebook-square fa-2x"></i>&nbsp; </a>
+        <a href="{{ site.github }}"class="social"><i class="fa fa-github-square fa-2x"></i>&nbsp; </a>
+        <hr class="clear"/>
+        <div style="line-height: 200%;">
+        <a href="{{ site.url }}/about.html" class="social"><i class="fa fa-user"></i>&nbsp;&nbsp; about</a><br>
+        <a href="{{ site.url }}/all.html"class="social"><i class="fa fa-list-ul"></i>&nbsp; all posts</a><br>
+        <a href="{{ site.url }}/favorites.html"class="social"><i class="fa fa-heart"></i>&nbsp; favorites</a><br>
+        <a href="{{ site.url }}/events.html"class="social"><i class="fa fa-calendar"></i>&nbsp; events</a><br>
+        <a href="{{ site.url }}/contact.html"class="social"><i class="fa fa-phone"></i>&nbsp;&nbsp; contact</a>
+        </div>
+        <br><a href="mailto:hi@robinspatel.com" class="social"><i class="fa fa-comment fa"></i>&nbsp; {{ site.email }}</a><br><br>
+        <p class="lighter">{{ site.description }}</p>
+      </nav>
+      &nbsp;
+    </div>
+
+

@@ -1,0 +1,33 @@
+<div class="twelve columns offset-by-four content">
+	<h1 class="remove-bottom" style="margin-top: 100px">{{ site.greeting_title }}</h1>
+	<h1><small>{{ site.greeting_text }}</small></h1>
+
+	<div class="twelve columns">
+		<hr class="lighter"/>
+		<div class="recent-posts">featured</div>
+		{% for post in site.posts limit: 1 %}
+		<div class="row post-list">
+			<div class="eight columns alpha">
+				<a href="{{ post.url }}"><h4>{{ post.title}}</h4>
+				</div>
+				<div class="four columns omega">
+					<h4 class="date"><small>{{ post.date | date_to_string }}</small></h4></a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="twelve columns">
+		<hr class="lighter"/>
+		<div class="recent-posts">latest posts</div>
+		{% for post in site.posts offset:1%}
+		<div class="row post-list">
+			<div class="eight columns alpha">
+				<a href="{{ post.url }}"><h4>{{ post.title}}</h4>
+				</div>
+				<div class="four columns omega">
+					<h4 class="date"><small>{{ post.date | date_to_string }}</small></h4></a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		</div>
