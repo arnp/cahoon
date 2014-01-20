@@ -1,5 +1,6 @@
 # Cahoon
 A new theme for Jekyll.
+![screenshot](/images/cahoon_resources/mac.png)
 
 ## Overview
 **Cahoon** is a beautiful new responsive theme for Jekyll, a blog-aware, static site generator. It's built on Skeleton with a helping of Bootstrap 3. 
