@@ -1,5 +1,6 @@
 # Cahoon
 A new theme for Jekyll.
+
 ![screenshot](/images/cahoon_resources/mac.png)
 
 ## Overview
@@ -42,11 +43,14 @@ Cahoon's appearance can be easily customized by modifying the `/stylesheets/layo
 
 ###### What's in a name? 
 [*Cahoon Hallow*](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
+<<<<<<< HEAD
 
 ###### Usage
 I would love to see where Cahoon gets used (or gets turned into). Send me an [email](hi@robinspatel.com),  [tweet](http://twitter.com/ravipatel), or even open an issue here -- anything works! 
 
 
+=======
+>>>>>>> 7d5ccb52e5a6e8d98a5ab09e23b8ca18274e188c
 ###### License 
 [MIT](https://github.com/arnp/cahoon/blob/master/LICENSE)
 
