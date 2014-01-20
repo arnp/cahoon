@@ -42,5 +42,5 @@ Cahoon's appearance can be easily customized by modifying the `/stylesheets/layo
 ###### What's in a name? 
 [*Cahoon* Hallow](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
 ###### License 
-[GPL v2](https://github.com/arnp/cahoon/blob/master/LICENSE)
+[MIT](https://github.com/arnp/cahoon/blob/master/LICENSE)
 
