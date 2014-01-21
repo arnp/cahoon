@@ -1,5 +1,6 @@
 # Cahoon
 A new theme for Jekyll.
+
 ![screenshot](/images/cahoon_resources/mac.png)
 
 ## Overview
