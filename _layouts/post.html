@@ -3,12 +3,12 @@ layout: default
 ---
 <div class="twelve columns post-view cover-image" style="float: right;  margin-top:-38px; background-color: #000; background-image: url({{ page.header }});  background-size: 100% 100%; height: 300px; border-bottom:solid 1px #fff;">
 
-      <h1 style="margin-top: 200px; font-weight:800; opacity: .9; margin-left: 25px; font-family: Lato; font-weight: 200;">{{ page.title }}</h1>
+  <h1 style="margin-top: 190px; margin-bottom:30px;  margin-left: 25px; font-family: Lato; font-weight: 200; color: #fff;">{{ page.title }}</h1>
 </div>
 
 
 <div class="twelve columns post-view" style="float: right;  text-shadow:1px 1px #fff;  margin-top: -2px; background-color:#f3f3f3; padding: 10px 0 10px 0;">
-      <h5 style="margin-left: 25px; color: #b6b8b8;"><small><i class="fa fa-calendar"></i>&nbsp; {{ page.date | date: '%B %d, %Y' }}<span style="float:right; margin-right:25px;"><i class="fa fa-tag"></i>&nbsp; {{ page.categories }}</span></small></h5>
+  <h5 style="margin-left: 25px; color: #b6b8b8;"><small><i class="fa fa-calendar"></i>&nbsp; {{ page.date | date: '%B %d, %Y' }}<span style="float:right; margin-right:25px;"><i class="fa fa-tag"></i>&nbsp; {{ page.categories }}</span></small></h5>
 </div>
 
 <div class="twelve columns post-view" style="float: right; padding-bottom:50px;">
@@ -28,7 +28,29 @@ layout: default
 
 <div class="twelve columns" style="float: right;">
 
-<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+
+<div class="twelve columns" style="float: right;">
+
+    <hr class="thicker"/>   <div class="recent-posts">join the discussion</div>
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'rnpatel'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
     </div>
 

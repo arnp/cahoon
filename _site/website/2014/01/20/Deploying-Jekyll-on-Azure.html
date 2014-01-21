@@ -79,93 +79,112 @@
 
 
 
-  <div class="twelve columns post-view cover-image" style="float: right;  margin-top:-38px; background-color: #000; background-image: url(/images/post-images/cahoon-header.png);  background-size: 100% 100%; height: 300px; border-bottom:solid 1px #fff;">
+  <div class="twelve columns post-view cover-image" style="float: right;  margin-top:-38px; background-color: #000; background-image: url(/images/post-images/azure-header.png);  background-size: 100% 100%; height: 300px; border-bottom:solid 1px #fff;">
 
-  <h1 style="margin-top: 190px; margin-bottom:30px;  margin-left: 25px; font-family: Lato; font-weight: 200; color: #fff;">About Cahoon</h1>
+  <h1 style="margin-top: 190px; margin-bottom:30px;  margin-left: 25px; font-family: Lato; font-weight: 200; color: #fff;">Deploying Jekyll on Azure with Github</h1>
 </div>
 
 
 <div class="twelve columns post-view" style="float: right;  text-shadow:1px 1px #fff;  margin-top: -2px; background-color:#f3f3f3; padding: 10px 0 10px 0;">
-  <h5 style="margin-left: 25px; color: #b6b8b8;"><small><i class="fa fa-calendar"></i>&nbsp; January 16, 2014<span style="float:right; margin-right:25px;"><i class="fa fa-tag"></i>&nbsp; </span></small></h5>
+  <h5 style="margin-left: 25px; color: #b6b8b8;"><small><i class="fa fa-calendar"></i>&nbsp; January 20, 2014<span style="float:right; margin-right:25px;"><i class="fa fa-tag"></i>&nbsp; website</span></small></h5>
 </div>
 
 <div class="twelve columns post-view" style="float: right; padding-bottom:50px;">
-  <div class="post"><div><center><h1>Cahoon <small style="font-weight:100">|  A new theme for Jekyll</small></h1></center></div>
+  <div class="post"><p><strong>Up until now,</strong> I&#39;ve been piggy backing on the server BU provides its students which was more than enough for my use cases. But as I move onto something more advanced for this site, I&#39;ve outgrown it (and it&#39;s space limitations). </p>
 
-<p><img src="/images/cahoon_resources/mac.png" alt="screenshot">
-<hr /></p>
+<p>This is where Azure Websites comes in.</p>
 
-<h2>Overview</h2>
+<p>Jekyll&#39;s homepage provides a overview of supported deployment methods -- this post will expand upon it by deploying Jekyll on Azure. </p>
 
-<p><strong>Cahoon</strong> is a beautiful new responsive theme for Jekyll, a blog-aware, static site generator. It&#39;s built on Skeleton with a helping of Bootstrap 3. </p>
+<p>Azure&#39;s website building wizard is incredibly powerful and will get you up and running in a matter of minutes (it also includes some very cool options such as <a href="http://ghost.org">Ghost</a>).  </p>
 
-<ul>
-<li><strong>Header Images</strong> for blog posts - easily set in the  front matter for each post</li>
-<li>Disqus Comments optional</li>
-<li>No plug-ins required </li>
-<li>Social media links - easily set <code>_config.yml</code></li>
-</ul>
+<p>I will assume you already have your jekyll blog running locally. If you don&#39;t, follow <a href="http://jekyllrb.com/docs/quickstart/">Jekyll&#39;s getting started guide</a>. </p>
 
-<p><img src="/images/cahoon_resources/iphone_hand.png" alt="screenshot"></p>
+<h3>1) Move your blog to Github</h3>
 
-<h3>Demo</h3>
+<p>By using Github, you&#39;ll be able to quickly push changes to your site. Chances are, if you&#39;re using Jekyll, you are probably already familiar with <a href="http://github.com">Github</a>. If not, start by creating your account and making a new repository for your site. If you&#39;ve never done this before, check out <a href="https://help.github.com/articles/create-a-repo">this help file</a> from GitHub. </p>
 
-<p>I use Cahoon on my <a href="URL">personal website</a>. </p>
+<p>Next, you&#39;ll want to copy over all the contents blog&#39;s folder into your new repo. The most graphical and way to to do is with Github&#39;s desktop app: <a href="http://mac.github.com">Mac</a>, <a href="http://mac.github.com">Windows</a>. </p>
 
-<h3>Setup</h3>
+<p>Once in the app, clone your repository to your computer and navigate to folder you picked. Drop in all the files from your blogs folder. (You can also have Github sync with your original blog&#39;s folder, but I like to keep them separate for ease.)</p>
+
+<h4>Important Deployment Settings</h4>
+
+<p>Your blog&#39;s folder may be different from mine but the way Jekyll works is that it will generate the website in a special folder. In my case it is <code>_site</code>. Your&#39;s may be the same or <code>site</code>,<code>website</code>, etc, depending on your configuration. </p>
+
+<p><img src="/images/post-images/azure-2.png" alt="my blog&#39;s folder"></p>
+
+<p>Azure&#39;s git deployment engine, <a href="https://github.com/projectkudu/kudu">Kudu</a>, will need to know where to look for your site. We&#39;ll need to create a <code>.deployment</code> file for this (otherwise it will attempt to generate the site from our root folder).</p>
+
+<p>Create a new file called <code>.deployment</code> with the following: </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[config]
+project = _site
+</code></pre></div>
+<p>Make sure edit the project property to your site&#39;s folder. </p>
+
+<p>Now sync all your changes with the Github app and you should see your files in the repository on Github. </p>
+
+<h3>2) Setup Azure</h3>
+
+<p>Azure&#39;s portal is very well designed and makes this step incredibly simple. </p>
+
+<h4>Create a New Azure Site</h4>
+
+<p>1) In the Azure portal, click the &quot;+&quot; to add an addition to your Azure account and choose a <code>custom create</code> website. </p>
+
+<p><img src="/images/post-images/azure-3.png" alt="custom create a new site"></p>
+
+<p>2) We&#39;re going to link our site to Github so check the <code>Publish from Source Control</code> option. </p>
+
+<p><img src="/images/post-images/azure-4.png" alt="publish from source control"></p>
+
+<p>3) Azure will ask you to give it permission to access your Github account. The default settings for the permissions are sufficient. </p>
+
+<p>4) Pick your blog&#39;s repository. If you&#39;ve created a separate branch, specify it here.  </p>
+
+<p><img src="/images/post-images/azure-5.png" alt="pick your repo"></p>
 
 <ol>
-<li>Install Jekyll</li>
-<li>Fork or <a href="https://github.com/arnp/herring-cove/archive/master.zip">download</a> this theme repo</li>
-<li>Edit the <code>_config.yml</code> file</li>
+<li>Your site should be up and running now! You can find your site&#39;s URL on the main settings page in the portal.</li>
 </ol>
 
-<p>Each post can have header image. Edit it in the post&#39;s front matter:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">title: A Weekend on the Coast
-layout: post
-date:   2014-01-25 07:55:20
-categories: beaches
-header: imgUrl
-</code></pre></div>
+<p><img src="/images/post-images/azure-6.png" alt="visit your site"></p>
+
+<h4>Setting up your Domain</h4>
+
+<p>You can specify a custom domain name in the <code>Configure</code> tab in the Azure portal. Do note that you will need to upgrade to the Shared or Standard website mode. In most situations with a blog, the Shared mode is more than enough.</p>
+
+<p>At this point you&#39;ll need to go to your domain&#39;s control panel to link it to your Azure site. The directions for this vary with providers to provider but here are some guides for some of the more popular domain services:</p>
+
+<p><a href="http://blogs.msdn.com/b/kaushal/archive/2013/07/06/windows-azure-web-sites-how-to-configure-a-custom-domain.aspx">GoDaddy</a></p>
+
+<p><a href="http://devtxt.com/blog/azurewebsites-dns-namecheap">Namecheap</a></p>
+
+<p><a href="http://stackoverflow.com/questions/20392619/azure-custom-domain-name-with-networksolutions-dns">Network Solutions</a></p>
+
+<p><img src="/images/post-images/azure-7.png" alt="setup domain"> </p>
+
 <hr>
 
-<h6>Further Customization</h6>
+<p>Your blog should now be fully functioning. Since Azure is monitoring your Github repository, any changes made will be automatically reflected on your Azure site. You can see a history of these updates in the <code>Deployments</code> tab in the Azure portal. </p>
 
-<p>Cahoon&#39;s appearance can be easily customized by modifying the <code>/stylesheets/layout.css</code> stylesheet. This includes changing colors and fonts. You can also change the grid settings by modifying or overriding <code>/stylesheets/skeleton.css</code>.  </p>
+<h4>Adding Posts</h4>
 
-<h6>Resources Implemented</h6>
+<p>The Github app will be monitoring your blog&#39;s local folder. Any changes you make in the folder can be synced with the repository on Github with the app. </p>
 
-<ul>
-<li><a href="http://getskeleton.com">Skeleton</a></li>
-<li><a href="http://getbootstrap.com">Bootstrap</a></li>
-<li><a href="http://google.com/fonts">Google Fonts</a></li>
-<li><a href="http://fontawesome.io">Fontawesome</a></li>
-</ul>
+<p>What this means for you is that all you need to do is add your posts in the <code>posts</code> directory, open up the Github app, and sync. </p>
 
-<h6>What&#39;s in a name?</h6>
+<hr>
 
-<p><a href="http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html"><em>Cahoon Hallow</em></a> is a beach in Wellfleet, Massachusetts. 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-
-<h6>Usage</h6>
-
-<p>I would love to see where Cahoon gets used (or gets turned into). Send me an <a href="hi@robinspatel.com">email</a>,  <a href="http://twitter.com/ravipatel">tweet</a>, or even open an issue here -- anything works! </p>
-
-<h1></h1>
-
-<h6>License</h6>
-
-<p><a href="https://github.com/arnp/cahoon/blob/master/LICENSE">MIT</a></p>
+<p>If you have any problems, make sure to check your <code>.deployment</code> file. </p>
 </div>
 </div>
 
 <div class="twelve columns post-view" style="float: right; margin-top: 0; background-color:#f3f3f3; padding: 10px 0 10px 0; border-bottom: 2px #797979 solid">
 
   
-  <a class="pagenav-link" href="/website/2014/01/13/What-is-this-anyway.html"style="float: left;;"><i class="fa fa-arrow-left"></i> Previous</a>
+  <a class="pagenav-link" href="/2014/01/16/About-Cahoon.html"style="float: left;;"><i class="fa fa-arrow-left"></i> Previous</a>
   
-   
-  <a class="pagenav-link" href="/website/2014/01/20/Deploying-Jekyll-on-Azure.html" style="float: right;">Next <i class="fa fa-arrow-right"></i></a>
   
 
 </div>

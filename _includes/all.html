@@ -5,7 +5,7 @@
 		<div class="row">
 			<ul class="about">
 				{% for post in site.posts %}
-				<li style="list-style: none"><span><a href="{{ post.url }}"><h4><div id="number1">&nbsp;{{ forloop.index }}&nbsp;</div>{{ post.title }}<span class="post-list all-date">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</span></span></a></li>
+				<li style="list-style: none"><span><a href="{{ post.url }}"><h4><div id="numbers">&nbsp;{{ forloop.index }}&nbsp;</div>{{ post.title }}<span class="post-list all-date">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</span></span></a></li>
 				{% endfor %}
 			</ul>
 		</div>

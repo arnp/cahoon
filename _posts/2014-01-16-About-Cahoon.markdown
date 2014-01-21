@@ -1,18 +1,23 @@
 ---
 layout: post
 title: About Cahoon
-header: http://25.media.tumblr.com/9fe7c3c5b3bdea201a383b76184ee9fc/tumblr_mx1om1b8fJ1sfie3io1_1280.jpg
+header: /images/post-images/cahoon-header.png
 
 ---
-# Cahoon
+<div><center><h1>Cahoon <small style="font-weight:100">|  A new theme for Jekyll</small></h1></center></div>
+
 ![screenshot](/images/cahoon_resources/mac.png)
+<hr />
 ## Overview
 **Cahoon** is a beautiful new responsive theme for Jekyll, a blog-aware, static site generator. It's built on Skeleton with a helping of Bootstrap 3. 
 
-+ **Header Images** for blog posts - easily set in the  front matter for each post
-+ Disqus Comments optional
-+ No plug-ins required 
-+ Social media links - easily set `_config.yml`
+* **Header Images** for blog posts - easily set in the  front matter for each post
+* Disqus Comments optional
+* No plug-ins required 
+* Social media links - easily set `_config.yml`
+
+![screenshot](/images/cahoon_resources/iphone_hand.png)
+
 
 ### Demo
 I use Cahoon on my [personal website](URL). 
@@ -32,16 +37,24 @@ Each post can have header image. Edit it in the post's front matter:
 	header: imgUrl
 
 ---
+###### Further Customization
+Cahoon's appearance can be easily customized by modifying the `/stylesheets/layout.css` stylesheet. This includes changing colors and fonts. You can also change the grid settings by modifying or overriding `/stylesheets/skeleton.css`.  
 
-
-#### Resources Implemented:
+###### Resources Implemented
 * [Skeleton](http://getskeleton.com)
 * [Bootstrap](http://getbootstrap.com)
 * [Google Fonts](http://google.com/fonts)
 * [Fontawesome](http://fontawesome.io)
 
-#### What's in a name? 
+###### What's in a name? 
 [*Cahoon Hallow*](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
-#### License 
-[GPL v2](https://github.com/arnp/cahoon/blob/master/LICENSE)
+<<<<<<< HEAD
+
+###### Usage
+I would love to see where Cahoon gets used (or gets turned into). Send me an [email](hi@robinspatel.com),  [tweet](http://twitter.com/ravipatel), or even open an issue here -- anything works! 
+
+
+=======
+###### License 
+[MIT](https://github.com/arnp/cahoon/blob/master/LICENSE)
 

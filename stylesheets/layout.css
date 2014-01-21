@@ -26,6 +26,7 @@
     height: 100%;
     width: 100%;
     border-top: 2px #F24A49 solid;
+
 }
 /*Logo and Sidebar/////////////////////////////*/
 .logo {
@@ -40,7 +41,6 @@
 }
 
 .logo:hover {
-    opacity: 1;
     color:#F24A49;
 }
 
@@ -143,21 +143,21 @@ sup {font-size:xx-small; vertical-align:top;
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     color: #626262;
 }
- .post a  {
-        color: #34495e;
+
+
+.post a  {
+        color: #e41400;
 
 }
-.post li, .post a {
-    font-family: "Merriweather", "Lato" , "Georgia", "Times New Roman", serif;
-    }
 
 
 .post a:visited {
-    color: #848484;
+    color: #9c0003;
 }
-.post a:hover {
-    text-decoration: underline dotted 1px #000;
-}
+
+.post li, .post a {
+    font-family: "Merriweather", "Lato" , "Georgia", "Times New Roman", serif;
+    }
 
 .post h1, .post h2, .post h3, .post h4, .post h5,.post  h6{
         margin-bottom: 30px;
@@ -221,6 +221,8 @@ sup {font-size:xx-small; vertical-align:top;
 
 img { 
 padding-bottom: 30px;
+width: 100%;
+height: 100%;
 }
 
 
@@ -234,6 +236,8 @@ padding-bottom: 30px;
     margin-right: 50px;
 
   }
+
+
 /*==================================*/
 
 /*Twitter/////////////////////////////*/
@@ -306,12 +310,34 @@ white-space: pre;
 width: auto;
 background-color: #ededed;
 }
+/*===========All Posts List */
+#numbers { 
+    font-family: "Helvetica Neue";
+    font-weight: 800;
+    font-size: 20px;
+    border: 5px solid #464645;
+    border-radius:225px;
+    color: #1c1c1b;
+    background-color: #818180; 
+    height: auto;
+    width: auto;
+    text-align: center;
+    vertical-align: center;
+    display: inline;
+    margin-right: 20px;
+}
 
+
+
+.about li {
+    margin-bottom: 40px;
+}
 
 
 /*============Footer */
 footer {
     font-size: 12px;
+    margin-top: 30px;
     font-weight: 400;
     color: #4a4b47;
     font-family: "Lato","Helvetica",Arial;
