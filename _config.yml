@@ -3,7 +3,7 @@ author: Ravi (Robins) Patel
 markdown: redcarpet
 pygments: true
 baseurl: /
-url: http://localhost:4000
+url: 
 description: I'm an entrepreneur from Boston where I have been working on Pitch for Windows. In May, I graduated from Boston University's College of Engineering.
 greeting_title: Hi there,
 greeting_text: I'm an engineer and entreprenuer from Boston. This is my homepage.
