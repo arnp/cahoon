@@ -2,7 +2,7 @@ name: Robins Patel
 author: Ravi (Robins) Patel
 markdown: redcarpet
 pygments: true
-baseurl: /
+baseurl: http://rnpatel.azurewebistes.net
 url: 
 description: I'm an entrepreneur from Boston where I have been working on Pitch for Windows. In May, I graduated from Boston University's College of Engineering.
 greeting_title: Hi there,
