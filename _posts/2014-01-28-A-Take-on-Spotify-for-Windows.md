@@ -54,7 +54,7 @@ By maintaining the core structure of the user interface found in the Mac/Windows
 
 Notice how we can provide a cleaner interface by taking advantage of the full screen nature of Windows 8 and a bit more white space.
 
-<a href="http://imgur.com/E23hp4m">![Imgur](http://i.imgur.com/E23hp4m.gif)</a>
+<a href="http://imgur.com/E23hp4m"><img src="http://i.imgur.com/E23hp4m.gif"></a>
 
 ####Always there
 
