@@ -7,7 +7,8 @@ categories: justforfun
 ---
 # Where is the Windows 8 Spotify app?
 
------
+![spotify-1](/images/post-images/spotify-3.png)
+
 
 **Even after over a year** after the Modern UI was introduced alongside Windows 8, many major app developers haven't started taken advantage of the platform. It wasn't until nearly a [year later](http://www.theverge.com/2013/10/17/4846000/facebook-windows-8-official-app-launch) that Facebook released Windows 8 app. 
 
@@ -16,8 +17,8 @@ There is certainly a calling for more apps on the Windows app store, so much so 
 
 [The app](http://apps.microsoft.com/windows/en-us/app/cbbddd16-5d65-453b-b556-de3e7b3afa15) that is meant to be a compromise for Windows 8 (Modern UI/RT) Spotify users leaves *a lot* to be desired -- but that's because it's not from Spotify, it's just by some developer making use of their APIs. 
 
-<a href="http://apps.microsoft.com/windows/en-us/app/cbbddd16-5d65-453b-b556-de3e7b3afa15">![spotlite](http://wscont2.apps.microsoft.com/winstore/1x/70ae1523-04e3-4daf-bfe9-a9f0f7461868/Screenshot.235757.100000.jpg)	</a>
->The current choice for Spotify listeners looking for a native experience on Windows 8.
+<!--<a href="http://apps.microsoft.com/windows/en-us/app/cbbddd16-5d65-453b-b556-de3e7b3afa15">![spotlite](http://wscont2.apps.microsoft.com/winstore/1x/70ae1523-04e3-4daf-bfe9-a9f0f7461868/Screenshot.235757.100000.jpg)	</a>
+>The current choice for Spotify listeners looking for a native experience on Windows 8.!-->
 
 
 
@@ -32,7 +33,6 @@ I've taken some time to experiment with how Spotify could provide an experience 
 ----
 
 ###Horizontal Scrolling Galore
-![spotify-1](/images/post-images/spotify-3.png)
 
 ####Hero
 
