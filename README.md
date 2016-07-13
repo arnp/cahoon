@@ -20,7 +20,7 @@ I use Cahoon on my [personal website](URL).
 ### Setup
 
 1. Install Jekyll
-2. Fork or [download](https://github.com/arnp/herring-cove/archive/master.zip) this theme repo
+2. Fork or [download](https://github.com/arnp/cahoon/archive/master.zip) this theme repo
 3. Edit the `_config.yml` file
 
 Each post can have header image. Edit it in the post's front matter:
@@ -43,7 +43,6 @@ Cahoon's appearance can be easily customized by modifying the `/stylesheets/layo
 
 ###### What's in a name? 
 [*Cahoon Hallow*](http://www.fodors.com/world/north-america/usa/massachusetts/cape-cod/review-422729.html) is a beach in Wellfleet, Massachusetts. 
-<<<<<<< HEAD
 
 ###### Usage
 I would love to see where Cahoon gets used (or gets turned into). Send me an [email](hi@robinspatel.com),  [tweet](http://twitter.com/ravipatel), or even open an issue here -- anything works! 
